@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="tc1"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Test2">
+    <classes>
+      <class name="tc2"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Reporter">
+    <classes>
+      <class name="orangrHRMReporter"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test3">
+    <classes>
+      <class name="tc3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test4">
+    <classes>
+      <class name="tc4"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test5">
+    <classes>
+      <class name="tc5"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-20T16:55:53 IST" name="Suite" finished-at="2025-11-20T16:57:34 IST" duration-ms="101853">
+    <groups>
+    </groups>
+    <test started-at="2025-11-20T16:55:53 IST" name="Test1" finished-at="2025-11-20T16:56:14 IST" duration-ms="21089">
+      <class name="tc1">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tc1@30c15d8b]" started-at="2025-11-20T16:55:53 IST" name="setUp" finished-at="2025-11-20T16:55:55 IST" duration-ms="2766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tc1.loginTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:1, instance:tc1@30c15d8b]" started-at="2025-11-20T16:55:55 IST" name="loginTest" finished-at="2025-11-20T16:56:13 IST" duration-ms="18018" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login test failed: Expected condition failed: waiting for url to contain "/dashboard". Current url: "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.90, fedcm:accounts: true, goog:processID: 15404, ms:edgeOptions: {debuggerAddress: localhost:56727}, msedge: {msedgedriverVersion: 142.0.3595.90 (dbd633f4fff1..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56727/devtoo..., se:cdpVersion: 142.0.3595.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084bb4ecd6be3437d85bb9e4e2a4e4f4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login test failed: Expected condition failed: waiting for url to contain "/dashboard". Current url: "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.90, fedcm:accounts: true, goog:processID: 15404, ms:edgeOptions: {debuggerAddress: localhost:56727}, msedge: {msedgedriverVersion: 142.0.3595.90 (dbd633f4fff1..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56727/devtoo..., se:cdpVersion: 142.0.3595.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084bb4ecd6be3437d85bb9e4e2a4e4f4
+at org.testng.Assert.fail(Assert.java:111)
+at tc1.loginTest(tc1.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tc1@30c15d8b]" started-at="2025-11-20T16:56:13 IST" name="tearDown" finished-at="2025-11-20T16:56:14 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tc1 -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-11-20T16:56:14 IST" name="Test2" finished-at="2025-11-20T16:56:30 IST" duration-ms="16440">
+      <class name="tc2">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tc2@1e800aaa]" started-at="2025-11-20T16:56:14 IST" name="setUp" finished-at="2025-11-20T16:56:18 IST" duration-ms="4126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tc2.addEmployeeTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest()[pri:2, instance:tc2@1e800aaa]" started-at="2025-11-20T16:56:18 IST" name="addEmployeeTest" finished-at="2025-11-20T16:56:30 IST" duration-ms="12042" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Employee not added successfully expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Employee not added successfully expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tc2.addEmployeeTest(tc2.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tc2@1e800aaa]" started-at="2025-11-20T16:56:30 IST" name="tearDown" finished-at="2025-11-20T16:56:30 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tc2 -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-11-20T16:56:30 IST" name="Reporter" finished-at="2025-11-20T16:56:30 IST" duration-ms="1">
+    </test> <!-- Reporter -->
+    <test started-at="2025-11-20T16:56:30 IST" name="Test3" finished-at="2025-11-20T16:56:50 IST" duration-ms="19876">
+      <class name="tc3">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tc3@7eac9008]" started-at="2025-11-20T16:56:30 IST" name="setUp" finished-at="2025-11-20T16:56:35 IST" duration-ms="4531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tc3.searchEmployeeTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchEmployeeTest()[pri:3, instance:tc3@7eac9008]" started-at="2025-11-20T16:56:35 IST" name="searchEmployeeTest" finished-at="2025-11-20T16:56:50 IST" duration-ms="15088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tc3@7eac9008]" started-at="2025-11-20T16:56:50 IST" name="tearDown" finished-at="2025-11-20T16:56:50 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tc3 -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-11-20T16:56:50 IST" name="Test4" finished-at="2025-11-20T16:57:23 IST" duration-ms="32647">
+      <class name="tc4">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tc4@15de0b3c]" started-at="2025-11-20T16:56:50 IST" name="setUp" finished-at="2025-11-20T16:56:54 IST" duration-ms="3942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tc4.updateEmployeeTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateEmployeeTest()[pri:4, instance:tc4@15de0b3c]" started-at="2025-11-20T16:56:54 IST" name="updateEmployeeTest" finished-at="2025-11-20T16:57:22 IST" duration-ms="28463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tc4@15de0b3c]" started-at="2025-11-20T16:57:22 IST" name="tearDown" finished-at="2025-11-20T16:57:23 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tc4 -->
+    </test> <!-- Test4 -->
+    <test started-at="2025-11-20T16:57:23 IST" name="Test5" finished-at="2025-11-20T16:57:34 IST" duration-ms="11750">
+      <class name="tc5">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tc5@3bf7ca37]" started-at="2025-11-20T16:55:52 IST" name="beforeSuite" finished-at="2025-11-20T16:55:53 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tc5@3bf7ca37]" started-at="2025-11-20T16:57:23 IST" name="setUp" finished-at="2025-11-20T16:57:27 IST" duration-ms="4576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tc5.logoutTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutTest()[pri:5, instance:tc5@3bf7ca37]" started-at="2025-11-20T16:57:27 IST" name="logoutTest" finished-at="2025-11-20T16:57:34 IST" duration-ms="7000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tc5@3bf7ca37]" started-at="2025-11-20T16:57:34 IST" name="tearDown" finished-at="2025-11-20T16:57:34 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tc5@3bf7ca37]" started-at="2025-11-20T16:57:34 IST" name="afterSuite" finished-at="2025-11-20T16:57:35 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tc5 -->
+    </test> <!-- Test5 -->
+  </suite> <!-- Suite -->
+</testng-results>
